@@ -1,11 +1,6 @@
 "use client";
-import {useRouter} from "next/navigation";
-import PublicGames from "@/components/home/PublicGames/PublicGames";
-import CreateGame from "@/components/home/CreateGame";
-import JoinGame from "@/components/home/JoinGame";
 
 export default function FAQ() {
-  const router = useRouter();
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-8 px-4 py-10 lg:gap-16 ">
 
@@ -17,7 +12,7 @@ export default function FAQ() {
           <ul>
             <li>
               <h3>1. Как начать онлайн игру?</h3>
-              <p>Чтобы начать онлайн игру, выберите опцию "Онлайн игра", затем выберите комнату и укажите ставку. После
+              <p>Чтобы начать онлайн игру, выберите опцию [Онлайн игра], затем выберите комнату и укажите ставку. После
                 успешного проведения транзакции игра начнется.</p>
               <br/>
             </li>
@@ -57,7 +52,7 @@ export default function FAQ() {
 
           </p>
         </div>
-        <div className="divider divider-vertical">or</div>
+        <div className="divider divider-vertical"></div>
 
       </div>
     </div>

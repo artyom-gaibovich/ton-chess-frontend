@@ -152,7 +152,7 @@ export default function AuthModal() {
                       : " text-base-content border-opacity-10 hover:border-opacity-30")
                   }
                 >
-                  Guest
+                  Гость
                 </span>
                 <span
                   onClick={() => setActiveTab("login")}
@@ -163,7 +163,7 @@ export default function AuthModal() {
                       : " text-base-content border-opacity-10 hover:border-opacity-30")
                   }
                 >
-                  Login
+                  Авторизоваться
                 </span>
                 <span
                   onClick={() => setActiveTab("register")}
@@ -174,13 +174,13 @@ export default function AuthModal() {
                       : " text-base-content border-opacity-10 hover:border-opacity-30")
                   }
                 >
-                  Register
+                  Регистрация
                 </span>
               </div>
 
               <form className="flex flex-col px-2" onSubmit={submitAuth}>
                 {activeTab === "guest" && (
-                  <Guest currentName={session?.user?.name || "unknown user"} />
+                  <Guest currentName={session?.user?.name || "гость"} />
                 )}
                 {activeTab === "login" && <Login />}
                 {activeTab === "register" && <Register />}

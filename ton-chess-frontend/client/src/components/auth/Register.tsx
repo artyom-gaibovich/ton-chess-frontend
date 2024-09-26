@@ -4,7 +4,7 @@ export default function Register() {
   return (
     <div className="form-control">
       <label htmlFor="registerName" className="label">
-        <span className="label-text">Username</span>
+        <span className="label-text">Имя пользователя</span>
       </label>
       <input
         type="text"
@@ -12,14 +12,14 @@ export default function Register() {
         title="Alphanumeric characters only"
         id="registerName"
         name="registerName"
-        placeholder="username"
+        placeholder="имя пользователя"
         className="input input-bordered"
         maxLength={16}
         minLength={2}
         required
       />
       <label htmlFor="registerEmail" className="label">
-        <span className="label-text">Email (optional)</span>
+        <span className="label-text">Email (опционально)</span>
       </label>
       <input
         type="email"
@@ -30,13 +30,13 @@ export default function Register() {
         minLength={4}
       />
       <label htmlFor="registerPassword" className="label">
-        <span className="label-text">Password</span>
+        <span className="label-text">Пароль</span>
       </label>
       <input
         type="password"
         id="registerPassword"
         name="registerPassword"
-        placeholder="password"
+        placeholder="пароль"
         className="input input-bordered"
         minLength={3}
         required

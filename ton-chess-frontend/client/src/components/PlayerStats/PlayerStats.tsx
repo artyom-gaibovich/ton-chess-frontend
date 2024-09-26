@@ -1,11 +1,10 @@
 "use client";
-import {useEffect, useState} from 'react';
 import styles from './PlayerStats.module.css';
-import {getUserStats} from "@/api/user";
 import Image from "next/image";
 import {fetchProfileData} from "@/lib/user";
+import {FC, useEffect, useState} from "react";
 
-const PlayerStats: React.FC = () => {
+const PlayerStats: FC = () => {
   const [stats, setStats] = useState<any>(null);
 
   useEffect(() => {

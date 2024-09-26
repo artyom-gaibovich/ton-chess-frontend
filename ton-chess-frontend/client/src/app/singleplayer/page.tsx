@@ -1,8 +1,6 @@
 "use client";
-import {useRouter} from "next/navigation";
 
 export default function SinglePlayer() {
-  const router = useRouter();
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-8 px-4 py-10 lg:gap-16 ">
 
