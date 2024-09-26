@@ -1,0 +1,33 @@
+.connectButton:hover {
+    background-color: #008bcc;
+}
+
+.connectButton {
+    width: 60%;
+    padding: 1rem;
+    background-color: #0197EC;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+
+.connectButtonContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.h3Value {
+    font-size: 1.7rem;
+}
+.icon {
+    width: 50px; /* Задайте желаемую ширину */
+    height: 50px; /* Задайте желаемую высоту */
+    object-fit: contain; /* Подгонка изображения без обрезки */
+}
+
+
+.connectButtonValue {
+    font-size: 1.2rem;
+}
